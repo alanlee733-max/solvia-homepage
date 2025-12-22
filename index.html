@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solvia Medical - Global Beauty & Dermatology Export</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* New Hero Background Image related to beauty/medical tech */
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1594909187979-d1247b971a17?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'); 
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="text-gray-800 bg-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo: Solvia Medical (Sol = Sun) -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-bold text-amber-500">
+                        <i class="fa-solid fa-sun mr-2"></i>Solvia Medical
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu: Changed 'Our Story' to 'Brand History' -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-gray-600 hover:text-amber-600 font-medium transition">Home</a>
+                    <a href="#history" class="text-gray-600 hover:text-amber-600 font-medium transition">Brand History</a>
+                    <a href="#products" class="text-gray-600 hover:text-amber-600 font-medium transition">Products</a>
+                    <a href="#portfolio" class="text-gray-600 hover:text-amber-600 font-medium transition">Showcase</a>
+                    <a href="#contact" class="px-5 py-2.5 bg-amber-500 text-white font-medium rounded-full hover:bg-amber-600 transition shadow-md hover:shadow-lg">Inquire</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-amber-600 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu: Changed 'Our Story' to 'Brand History' -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-2 shadow-lg">
+                <a href="#home" class="block px-3 py-3 text-gray-600 hover:text-amber-600 hover:bg-gray-50 rounded-md font-medium">Home</a>
+                <a href="#history" class="block px-3 py-3 text-gray-600 hover:text-amber-600 hover:bg-gray-50 rounded-md font-medium">Brand History</a>
+                <a href="#products" class="block px-3 py-3 text-gray-600 hover:text-amber-600 hover:bg-gray-50 rounded-md font-medium">Products</a>
+                <a href="#portfolio" class="block px-3 py-3 text-gray-600 hover:text-amber-600 hover:bg-gray-50 rounded-md font-medium">Showcase</a>
+                <a href="#contact" class="block px-3 py-3 text-center bg-amber-500 text-white rounded-md mt-4 font-medium">Inquire</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-bg h-screen flex items-center justify-center text-center px-4 relative">
+        <div class="max-w-4xl mx-auto text-white animate-fade-in-up">
+            <span class="inline-block py-1 px-3 rounded-full bg-amber-500/30 border border-amber-400 text-amber-100 text-sm font-semibold mb-6">
+                The Path to Radiant Beauty (Solvia)
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                Pioneering the Future of <br/>
+                <span class="text-amber-400">Beauty & Dermatology</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto">
+                We export certified medical aesthetic devices and premium K-Beauty cosmetics to the world, providing the path to a brighter future.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="px-8 py-4 bg-amber-500 text-white text-lg font-bold rounded-full hover:bg-amber-600 transition shadow-lg hover:shadow-amber-500/30 transform hover:-translate-y-1">
+                    Inquire Now
+                </a>
+                <a href="#products" class="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/30 text-white text-lg font-bold rounded-full hover:bg-white/20 transition">
+                    View Products
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll Icon -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#history" class="text-white/70 hover:text-white">
+                <i class="fa-solid fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Brand History Section (Replaces About) -->
+    <section id="history" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                <!-- Text Content -->
+                <div>
+                    <h2 class="text-amber-500 font-bold uppercase tracking-wide mb-3">Brand History</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                        A Legacy of Trust,<br>
+                        Growing with Global Partners.
+                    </h3>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        Since our inception, Solvia Medical has been dedicated to bridging Korean medical innovation with the global market. Our journey is defined by continuous growth, rigorous quality certification, and expanding partnerships across 35+ countries.
+                    </p>
+                    
+                    <!-- Timeline Items -->
+                    <div class="space-y-8 border-l-2 border-gray-100 pl-8 ml-2">
+                        <!-- Item 2024 -->
+                        <div class="relative">
+                            <span class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-amber-500 border-4 border-white shadow-sm"></span>
+                            <span class="text-sm font-bold text-amber-500 mb-1 block">2024</span>
+                            <h4 class="text-xl font-bold text-gray-900">Global Expansion & Award</h4>
+                            <p class="text-gray-500 mt-1">Surpassed $10M in annual exports. Awarded 'Best Exporter' by KITA.</p>
+                        </div>
+                        
+                        <!-- Item 2021 -->
+                        <div class="relative">
+                            <span class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-indigo-200 border-4 border-white shadow-sm"></span>
+                            <span class="text-sm font-bold text-gray-500 mb-1 block">2021</span>
+                            <h4 class="text-lg font-bold text-gray-900">European Certification</h4>
+                            <p class="text-gray-500 mt-1">Acquired CE MDR certification for core laser devices. Expanded into EU markets.</p>
+                        </div>
+
+                        <!-- Item 2018 -->
+                        <div class="relative">
+                            <span class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-indigo-200 border-4 border-white shadow-sm"></span>
+                            <span class="text-sm font-bold text-gray-500 mb-1 block">2018</span>
+                            <h4 class="text-lg font-bold text-gray-900">First Export Milestone</h4>
+                            <p class="text-gray-500 mt-1">Established exclusive distribution partnerships in SE Asia (Vietnam, Thailand).</p>
+                        </div>
+
+                        <!-- Item 2015 -->
+                        <div class="relative">
+                            <span class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-indigo-200 border-4 border-white shadow-sm"></span>
+                            <span class="text-sm font-bold text-gray-500 mb-1 block">2015</span>
+                            <h4 class="text-lg font-bold text-gray-900">Solvia Medical Founded</h4>
+                            <p class="text-gray-500 mt-1">Founded in Seoul with a vision to lead the medical aesthetic trade.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Side -->
+                <div class="relative mt-8 lg:mt-0">
+                    <div class="absolute -top-4 -right-4 w-64 h-64 bg-amber-50 rounded-full mix-blend-multiply filter blur-2xl opacity-70"></div>
+                    <div class="absolute -bottom-4 -left-4 w-64 h-64 bg-indigo-50 rounded-full mix-blend-multiply filter blur-2xl opacity-70"></div>
+                    
+                    <div class="grid grid-cols-2 gap-4 relative z-10">
+                        <img src="https://images.unsplash.com/photo-1576091160550-217358c7e618?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Medical Tech" class="rounded-2xl shadow-lg w-full h-64 object-cover transform translate-y-8">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Business Meeting" class="rounded-2xl shadow-lg w-full h-64 object-cover">
+                    </div>
+                    
+                    <!-- Badge -->
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-full shadow-2xl z-20 w-40 h-40 flex flex-col items-center justify-center text-center border-4 border-amber-50">
+                        <span class="text-3xl font-extrabold text-amber-500">10<sup>th</sup></span>
+                        <span class="text-xs font-bold text-gray-600 uppercase mt-1">Anniversary</span>
+                        <span class="text-[10px] text-gray-400">Since 2015</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section (Previously Services) -->
+    <section id="products" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-amber-500 font-bold uppercase tracking-wide mb-3">Our Products</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Exporting Beauty & Medical Excellence</h3>
+                <p class="text-gray-600">We source and export top-tier medical devices and cosmetics that meet global standards.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product Line 1: Medical Devices -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 text-2xl mb-6 group-hover:bg-indigo-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Medical Aesthetic Devices</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        High-performance dermatology lasers, RF micro-needling systems, and HIFU devices. CE/FDA cleared for global markets.
+                    </p>
+                </div>
+
+                <!-- Product Line 2: Cosmetics -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 text-2xl mb-6 group-hover:bg-amber-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-pump-soap"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Clinical Cosmetics (K-Beauty)</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        Post-procedure skin care, anti-aging serums, and functional cosmetics verified for safety and efficacy.
+                    </p>
+                </div>
+
+                <!-- Product Line 3: Consumables/Support -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center text-green-600 text-2xl mb-6 group-hover:bg-green-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Medical Consumables</h4>
+                    <p class="text-gray-600 leading-relaxed">
+                        Essential medical consumables including cartridges, needles, and gel, ensuring a stable supply chain for clinics.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section (Portfolio) -->
+    <section id="portfolio" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-amber-500 font-bold uppercase tracking-wide mb-3">Showcase</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Products</h3>
+                <p class="text-gray-600">A glimpse into the excellence we deliver across aesthetic devices and premium cosmetics.</p>
+            </div>
+
+            <!-- Product/Partner Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Item 1: Device -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://placehold.co/600x400/81C784/ffffff?text=Laser+Device" alt="Dermatology Laser Device" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-indigo-600 uppercase">Aesthetic Device</span>
+                        <h4 class="text-xl font-bold text-gray-900 mt-2 mb-2">High-Intensity RF System</h4>
+                        <p class="text-gray-600 text-sm">Next-generation medical device for non-invasive skin tightening and contouring. CE marked.</p>
+                    </div>
+                </div>
+                
+                <!-- Item 2: Cosmetics -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://placehold.co/600x400/FFCC80/333333?text=K-Beauty+Serum" alt="Premium K-Beauty Serum" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-amber-600 uppercase">Premium Cosmetics</span>
+                        <h4 class="text-xl font-bold text-gray-900 mt-2 mb-2">Hyaluronic Acid Recovery Serum</h4>
+                        <p class="text-gray-600 text-sm">Export exclusive K-Beauty serum formulated for deep hydration and barrier repair.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3: Device -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://placehold.co/600x400/9FA8DA/ffffff?text=HIFU+Device" alt="HIFU Device" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-indigo-600 uppercase">Aesthetic Device</span>
+                        <h4 class="text-xl font-bold text-gray-900 mt-2 mb-2">Ultra-Lift HIFU</h4>
+                        <p class="text-gray-600 text-sm">Precise focused ultrasound technology for face lifting and body contouring.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#contact" class="px-8 py-3 bg-indigo-600 text-white font-bold rounded-full hover:bg-indigo-700 transition shadow-lg inline-flex items-center">
+                    Request Full Catalog <i class="fa-solid fa-file-pdf ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-indigo-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">35+</div>
+                    <div class="text-amber-200">Countries Exported</div>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">99%</div>
+                    <div class="text-amber-200">Quality Check Rate</div>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">500+</div>
+                    <div class="text-amber-200">Product Line Items</div>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">8 Years</div>
+                    <div class="text-amber-200">Export History</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-amber-500 font-bold uppercase tracking-wide mb-3">Inquire</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Partner with Us for Global Export.</h3>
+                    <p class="text-gray-600 mb-8 text-lg">
+                        Ready to discuss a partnership or product sourcing? Reach out to our dedicated global trade team.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center text-amber-500 text-xl">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-gray-900">Korea HQ Location</h4>
+                                <p class="text-gray-600">123 Teheran-ro, Gangnam-gu, Seoul, Fintech Tower 10F</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center text-amber-500 text-xl">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-gray-900">Phone (Export Desk)</h4>
+                                <p class="text-gray-600">+82 2-1234-5678</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center text-amber-500 text-xl">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-gray-900">Email</h4>
+                                <p class="text-gray-600">export@solviamedical.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-gray-50 p-8 rounded-3xl shadow-lg border border-gray-100">
+                    <form class="space-y-6" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition" placeholder="email@example.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Inquiry Type</label>
+                            <select class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition">
+                                <option>Product Sourcing (Devices)</option>
+                                <option>Product Sourcing (Cosmetics)</option>
+                                <option>Market Entry Consulting</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition" placeholder="Tell us about your sourcing needs or partnership proposal."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-amber-500 text-white font-bold py-4 rounded-xl hover:bg-amber-600 transition transform hover:-translate-y-1 shadow-lg">
+                            Send Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <span class="text-2xl font-bold text-white flex items-center">
+                        <i class="fa-solid fa-sun mr-2 text-amber-500"></i>Solvia Medical
+                    </span>
+                    <p class="mt-2 text-sm">© 2025 Solvia Medical Inc. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-white transition"><i class="fa-brands fa-facebook text-xl"></i></a>
+                    <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram text-xl"></i></a>
+                    <a href="#" class="hover:text-white transition"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                    <a href="#" class="hover:text-white transition"><i class="fa-brands fa-youtube text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            // Apply shadow only when scrolling down
+            if (window.scrollY > 10) {
+                navbar.classList.add('shadow-md');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+
+        // Form Submit (Demo)
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Display custom success message instead of alert()
+            const successMsg = document.createElement('div');
+            successMsg.className = 'fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded shadow-lg z-50 transition-all duration-300 transform translate-x-0 opacity-100';
+            successMsg.textContent = 'Inquiry sent successfully!';
+            document.body.appendChild(successMsg);
+            
+            setTimeout(() => {
+                successMsg.classList.add('opacity-0', 'translate-x-full');
+            }, 2500);
+
+            setTimeout(() => {
+                successMsg.remove();
+                form.reset();
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
