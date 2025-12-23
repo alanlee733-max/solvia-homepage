@@ -118,6 +118,10 @@ h5 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
+    padding-bottom: 10px;
+    /* Add padding to prevent descender clipping */
+    margin-bottom: -10px;
+    /* Counteract padding layout shift */
 }
 
 /* Buttons */
@@ -205,13 +209,17 @@ h5 {
     font-weight: 700;
     letter-spacing: 0.05em;
     color: var(--color-navy);
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .logo-sub {
     font-weight: 300;
-    font-size: 14px;
+    /* Keep weight different for style, but matching size */
+    font-size: 24px;
+    /* Matched size */
     color: var(--color-gold);
-    margin-left: 4px;
 }
 
 .nav-menu {
