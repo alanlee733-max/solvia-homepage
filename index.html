@@ -8,10 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@300;400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&family=Manrope:wght@300;400;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20251224084641">
+    <script src="script.js?v=20251224072002" defer></script>
 </head>
 
 <body class="custom-cursor-active">
@@ -21,15 +21,23 @@
 
     <header class="glass-header">
         <div class="container header-content">
-            <div class="logo">
-                <span class="logo-text">SOLVIA</span>
-                <span class="logo-sub">MEDICAL</span>
-            </div>
+            <a href="#hero" class="logo">
+                <div class="logo-text">SOLVIA</div>
+            </a>
             <nav class="nav-menu">
                 <a href="#hero" class="nav-link">Home</a>
-                <a href="#showcase" class="nav-link">Products</a>
+                <div class="nav-dropdown">
+                    <a href="#showcase" class="nav-link">Products</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item" data-category="medical-devices">Medical Devices</a>
+                        <a href="#" class="dropdown-item" data-category="cosmeceuticals">Cosmeceuticals</a>
+                        <a href="#" class="dropdown-item" data-category="professional-equipment">Professional
+                            Equipment</a>
+                    </div>
+                </div>
                 <a href="#science" class="nav-link">Science</a>
                 <a href="#global" class="nav-link">Global Partners</a>
+                <a href="#news-exhibition" class="nav-link">News & Exhibition</a>
                 <a href="#contact" class="btn-primary">Contact Us</a>
             </nav>
         </div>
@@ -41,21 +49,32 @@
             <div class="hero-bg-overlay"></div>
             <div class="container hero-content">
                 <div class="hero-text">
-                    <h1 class="fade-in-up">The Path to<br><span class="text-gradient">Radiant Light</span></h1>
-                    <p class="fade-in-up delay-1">Where clinical precision meets the warmth of nature. Solvia creates
-                        the future of aesthetic medicine.</p>
-                    <div class="hero-cta fade-in-up delay-2">
+                    <h2 class="hero-subtitle fade-in-up">Global Medical Solutions</h2>
+                    <h1 class="fade-in-up delay-1">The Path to<br><span class="text-gradient">Radiant Skin</span></h1>
+                    <p class="hero-description fade-in-up delay-2">
+                        Premium Cosmeceuticals &<br>
+                        Aesthetic Medical Devices
+                    </p>
+                    <div class="hero-credentials fade-in-up delay-2">
+                        <span class="credential-item">
+                            <svg class="check-icon" viewBox="0 0 24 24">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
+                            </svg>
+                            FDA/CE Certified
+                        </span>
+                        <span class="credential-item">
+                            <svg class="check-icon" viewBox="0 0 24 24">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
+                            </svg>
+                            Trusted by 2,000+ Professionals
+                        </span>
+                    </div>
+                    <div class="hero-cta fade-in-up delay-3">
                         <a href="#showcase" class="btn-primary">Discover Solutions</a>
-                        <a href="#science" class="btn-secondary">Our Science</a>
+                        <a href="#identity" class="btn-secondary">Our Standards</a>
                     </div>
                 </div>
-                <div class="hero-visual fade-in delay-3">
-                    <!-- Placeholder for 3D Device Image if generation fails -->
-                    <div class="device-placeholder">
-                        <div class="light-beam"></div>
-                        <div class="device-shape"></div>
-                    </div>
-                </div>
+                <!-- Product image removed - space available for new content -->
             </div>
             <div class="scroll-indicator">
                 <span class="mouse">
@@ -64,51 +83,87 @@
             </div>
         </section>
 
-        <!-- Product Showcase (Dichotomy: Cool Tech vs Warm Organic) -->
+        <!-- Company Identity - 3 Pillars -->
+        <section id="identity" class="identity-section">
+            <div class="container">
+                <div class="section-header center-text">
+                    <h2 class="fade-in-up">What We Stand For</h2>
+                    <p class="fade-in-up delay-1">Our commitment to medical-grade excellence</p>
+                </div>
+                <div class="pillars-grid">
+                    <div class="pillar-card fade-in-up">
+                        <div class="pillar-icon">🔬</div>
+                        <h3>Scientific Integrity</h3>
+                        <p>Evidence-based formulations backed by rigorous clinical trials and peer-reviewed research.
+                        </p>
+                    </div>
+                    <div class="pillar-card fade-in-up delay-1">
+                        <div class="pillar-icon">🏥</div>
+                        <h3>Clinical Partnership</h3>
+                        <p>Developed alongside leading dermatologists and aesthetic physicians worldwide.</p>
+                    </div>
+                    <div class="pillar-card fade-in-up delay-2">
+                        <div class="pillar-icon">🌍</div>
+                        <h3>Global Standards</h3>
+                        <p>FDA and CE certified products meeting the highest international safety benchmarks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Showcase (Category Outlines) -->
         <section id="showcase" class="showcase-section">
             <div class="container">
                 <div class="section-header center-text">
-                    <h2 class="fade-in-up">Refined Innovations</h2>
-                    <p class="fade-in-up delay-1">State-of-the-art devices and cosmeceuticals.</p>
+                    <h2 class="fade-in-up">Product Categories</h2>
+                    <p class="fade-in-up delay-1">Medical-grade solutions for aesthetic excellence</p>
                 </div>
                 <div class="product-grid">
-                    <!-- Product Card 1: Medical Device (Cool, Sharp) -->
-                    <div class="product-card type-device fade-in-up">
+                    <!-- Category 1: Medical Devices -->
+                    <div class="product-card type-device fade-in-up" data-category="medical-devices">
                         <div class="card-glow"></div>
                         <div class="card-image">
+                            <!-- TODO: Upload product image -->
+                            <!-- Image path: /images/products/medical-devices.jpg -->
                             <div class="mock-device device-1"></div>
                         </div>
                         <div class="card-info">
-                            <span class="category-tag">Beauty Device</span>
-                            <h3>Lumina Wave</h3>
-                            <p>Advanced RF Lifting. Precision Engineering.</p>
-                            <a href="#" class="link-gold">View Specs &rarr;</a>
+                            <span class="category-tag">Medical Devices</span>
+                            <h3>Medical Devices</h3>
+                            <p>FDA/CE certified equipment for professional aesthetic treatments.</p>
+                            <a href="#" class="link-gold product-view-btn">View Products &rarr;</a>
                         </div>
                     </div>
-                    <!-- Product Card 2: Cosmeceutical (Warm, Organic) -->
-                    <div class="product-card type-cosmetic fade-in-up delay-1">
+
+                    <!-- Category 2: Cosmeceuticals -->
+                    <div class="product-card type-cosmetic fade-in-up delay-1" data-category="cosmeceuticals">
                         <div class="card-glow"></div>
                         <div class="card-image">
+                            <!-- TODO: Upload product image -->
+                            <!-- Image path: /images/products/cosmeceuticals.jpg -->
                             <div class="mock-device device-2"></div>
                         </div>
                         <div class="card-info">
-                            <span class="category-tag">Cosmeceutical</span>
-                            <h3>Solvia Serum</h3>
-                            <p>High-Potency Brightening. Pure Absorption.</p>
-                            <a href="#" class="link-gold">View Composition &rarr;</a>
+                            <span class="category-tag">Cosmeceuticals</span>
+                            <h3>Cosmeceuticals</h3>
+                            <p>Clinical-grade skincare with proven efficacy and safety.</p>
+                            <a href="#" class="link-gold product-view-btn">View Products &rarr;</a>
                         </div>
                     </div>
-                    <!-- Product Card 3: Medical Device -->
-                    <div class="product-card type-device fade-in-up delay-2">
+
+                    <!-- Category 3: Professional Equipment -->
+                    <div class="product-card type-device fade-in-up delay-2" data-category="professional-equipment">
                         <div class="card-glow"></div>
                         <div class="card-image">
+                            <!-- TODO: Upload product image -->
+                            <!-- Image path: /images/products/professional-equipment.jpg -->
                             <div class="mock-device device-3"></div>
                         </div>
                         <div class="card-info">
-                            <span class="category-tag">Beauty Device</span>
-                            <h3>Solvia Glow</h3>
-                            <p>Fractional CO2 System. Clinical Power.</p>
-                            <a href="#" class="link-gold">View Specs &rarr;</a>
+                            <span class="category-tag">Professional Equipment</span>
+                            <h3>Professional Equipment</h3>
+                            <p>Advanced tools for medical practitioners and clinics.</p>
+                            <a href="#" class="link-gold product-view-btn">View Products &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -211,6 +266,64 @@
                         <p>Join the exclusive network of Solvia distributors.</p>
                         <a href="#contact" class="btn-primary bloom-effect">Inquire Now</a>
                     </div>
+        </section>
+
+        <!-- News & Exhibition -->
+        <section id="news-exhibition" class="news-exhibition-section">
+            <div class="container">
+                <div class="section-header center-text">
+                    <h2 class="fade-in-up">News & Exhibition</h2>
+                </div>
+                <div class="news-grid">
+                    <!-- Event Card 1: Beauty World Japan -->
+                    <div class="news-card fade-in-up">
+                        <div class="news-image">
+                            <img src="beauty world japan_tokyo25.jpg" alt="Beauty World Japan Tokyo 2025">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-tag news">News</span>
+                            <h3>Beauty World Japan Tokyo 2025</h3>
+                            <p>Thank you for visiting SOLVIA medical during Beauty World Japan Tokyo 2025.Beauty World
+                                Japan Tokyo...</p>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 2: DUBAI DERMA -->
+                    <div class="news-card fade-in-up delay-1">
+                        <div class="news-image">
+                            <img src="Dubai Derma25.jpg" alt="DUBAI DERMA 2025">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-tag news">News</span>
+                            <h3>DUBAI DERMA 2025</h3>
+                            <p>Thank you for visiting SOLVIA medical during DUBAI DERMA 2025.DUBAI DERMA 202514th ~ 16th
+                                Apr...</p>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 3: FIME 2025 -->
+                    <div class="news-card fade-in-up delay-2">
+                        <div class="news-image">
+                            <img src="fime2025.webp" alt="FIME 2025">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-tag exhibition">Exhibition</span>
+                            <h3>FIME 2025</h3>
+                            <p>11th~ 13th Jun, 2025 Miami Beach Convention Center Florida, USA...</p>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 4: IMCAS Asia 2025 -->
+                    <div class="news-card fade-in-up delay-3">
+                        <div class="news-image">
+                            <img src="imcas asia25.jpg" alt="IMCAS Asia 2025">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-tag exhibition">Exhibition</span>
+                            <h3>IMCAS Asia 2025</h3>
+                            <p>6th~ 8th Jun, 2025 Bangkok The Athenee Hotel, Collection Hotel...</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -233,6 +346,76 @@
             <p>&copy; 2024 Solvia Medical. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Contact Form Modal -->
+    <div id="contactModal" class="contact-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-header">
+                <h2>Contact</h2>
+                <p>For more information, please leave your inquiry with contact details.<br>
+                    We will get in touch with you at our soonest.</p>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name<span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company<span class="required">*</span></label>
+                        <input type="text" id="company" name="company" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email<span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone<span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                    <label for="message">Message<span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="5" placeholder="Please enter your comments."
+                        required></textarea>
+                </div>
+                <div class="form-checkbox">
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">I agree with <a href="#" class="privacy-link">privacy policy</a>.</label>
+                </div>
+                <button type="submit" class="form-submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Product Catalog Modal -->
+    <div id="productModal" class="product-modal">
+        <div class="modal-overlay"></div>
+        <div class="product-modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="product-modal-header">
+                <h2 id="modalCategoryTitle">Products</h2>
+                <p id="modalCategoryDesc">Explore our range of professional solutions</p>
+            </div>
+            <div class="product-list-grid" id="productListGrid">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
